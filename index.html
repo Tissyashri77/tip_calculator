@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <section class="card">
+    <div class="header">
+      <h2>SPLI <br>
+          TTER</h2>
+    </div>
+    <div class="bill">
+      <div class="bill-left">
+        <div id="amount">
+          <h2>Bill</h2>
+          <input type="number" name="" id="bill-amt" placeholder="0">
+        </div>
+
+
+        <div id="tip">
+          <h2>Select Tip %</h2>
+          <div class="tip-amts">
+            <button class="tip"  value="5">5%</button>
+            <button class="tip" value="10">10%</button>
+            <button class="tip"  value="15">15%</button>
+            <button class="tip"  value="25">25%</button>
+            <button class="tip"  value="50">50%</button>
+            <button class="tip"  value="10">Custom</button>
+          </div>  
+        </div>
+
+
+        <div id="people">
+          <h2>Number of People</h2>
+          <input type="number" name="" id="tpeople" placeholder="0">
+        </div>
+      </div>
+
+      <div class="bill-right">
+           <div class="top">
+            <div class="top1">
+              <div class="word">
+                <h3>Tip Amount</h3>
+                <h4>/ person</h4>
+              </div>
+              <div class="number">
+                <p id="number-amt"> $<span> 0.00</span></p>
+              </div>
+            </div>
+            <div class="top2">
+              <div class="word">
+                <h3>Total</h3>
+                <h4>/ person</h4>
+              </div>
+              <div class="number1">
+                <p id="number1-amt"> $<span> 0.00</span></p>
+              </div>
+            </div>
+           </div>
+           <div class="reset">
+            <button>RESET</button>
+           </div>
+      </div>
+       
+    </div>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
